@@ -6,6 +6,8 @@ import { BookOpen, User, LogIn, Menu, X, PenTool } from 'lucide-react';
 import { useAuthStore, useUIStore } from '@/lib/store';
 import { createClient } from '@/lib/supabase/client';
 import AuthModal from './AuthModal';
+import { ThemeToggle } from './ThemeToggle';
+import { NotificationCenter } from './NotificationCenter';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -79,8 +81,11 @@ export default function Header() {
                 Kitaplar
               </Link>
               
+              <ThemeToggle />
+              
               {user ? (
                 <>
+                  <NotificationCenter />
                   <Link
                     href={`/profile/${user.username}`}
                     className="flex items-center gap-2 text-[var(--foreground)] hover:text-[var(--primary)] transition-colors"

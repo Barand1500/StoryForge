@@ -2,7 +2,7 @@
   "name": "storyforge",
   "version": "0.1.0",
   "private": true,
-  "description": "Topluluk tarafından yazılan interaktif hikaye platformu",
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,7 +12,9 @@
   "dependencies": {
     "@supabase/ssr": "^0.8.0",
     "@supabase/supabase-js": "^2.97.0",
+    "@types/lodash.debounce": "^4.0.9",
     "date-fns": "^4.1.0",
+    "lodash.debounce": "^4.0.8",
     "lucide-react": "^0.575.0",
     "next": "16.1.6",
     "react": "19.2.3",
@@ -29,7 +31,6 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   },
-  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
   "main": "index.js",
   "keywords": [],
   "author": "",
